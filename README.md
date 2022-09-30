@@ -4,6 +4,7 @@ Objective #1 -
 * First Query Command: 
 CREATE DATABASE real_estate_analytics
 * Second Query Command: 
+<pre>
 CREATE EXTERNAL TABLE IF NOT EXISTS `real_estate_analytics`.`manhattan_sold_houses` (
   `price` double,
   `bedrooms` double,
@@ -21,3 +22,4 @@ WITH SERDEPROPERTIES (
 )
 LOCATION 's3://nyc-housing-analytics/manhattan-datafeed/'
 TBLPROPERTIES ('has_encrypted_data' = 'false', 'skip.header.line.count'='1');
+</pre>
